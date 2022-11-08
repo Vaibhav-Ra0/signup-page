@@ -41,3 +41,7 @@ body {
 {
     border-radius: 41%;
 }
+.backgcolor
+{
+  background:linear-gradient(33deg,pink,lightyellow);
+}
