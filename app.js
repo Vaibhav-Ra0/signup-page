@@ -60,8 +60,12 @@ app.post("/",function(req,res){
     request.end();
 }
 );
+app.post("/failure", function(req,res)
+{
+    res.redirect("/");
+})
 //server porting
-app.listen(3000, function(req,res)
+app.listen(process.env.PORT || 3000, function(req,res)
 {
     console.log("server started at port : 3000");
 })
